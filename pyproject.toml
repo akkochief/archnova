@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "archnova"
+version = "1.0.0"
+description = "Arch Linux icin gradient'li, canli, goz alici neofetch alternatifi"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+classifiers = ["Operating System :: POSIX :: Linux", "Environment :: Console"]
+
+[project.scripts]
+archnova = "archnova.cli:main"
+
+[tool.setuptools]
+packages = ["archnova"]
